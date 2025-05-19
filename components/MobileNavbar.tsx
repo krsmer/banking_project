@@ -35,20 +35,20 @@ const MobileNavbar = ({user}:MobileNavProps) => {
                     width={34}
                     height={34}
                     alt="Horizon logo"
-                    
+                   
                     priority
                 />
                 <h1 className="text-26 font-bold text-shadow-black">Horizon</h1>
                 </Link>
                 <div className='flex h-[calc(100vh-72px)] flex-col justify-between overflow-y-auto'>
                     <SheetClose asChild>
-                        <nav className='flex h-full flex-col gap-6 pt-16 text-white cursor-pointer'>
+                        <nav className='flex h-full flex-col gap-6 pt-16 text-white '>
                                     {sidebarLinks.map((item) => {
-                                const isActive = pathname === item.route || pathname.startsWith(`${item.route}/`);
+                                        const isActive = pathname === item.route || pathname.startsWith(`${item.route}/`);
                                 return (
                                     <SheetClose asChild key={item.route}>
                                            <Link href={item.route} key={item.label}
-                                            className={cn('flex gap-3 items-center py-1 md:p-3 2xl:p-4 rounded-lg justify-center xl:justify-start', { 'bg-gradient-to-br from-blue-200 to-blue-600 hover:scale-105 transform transition-all duration-300': isActive })}
+                                            className={cn('flex gap-6 items-center py-1 md:p-3 2xl:p-4 rounded-sm justify-center xl:justify-start', { 'bg-gradient-to-br from-blue-200 to-blue-600 hover:scale-105 transform transition-all duration-300': isActive })}
                                             >
                                             <div className="relative size-6">
                                                 <Image 
@@ -64,7 +64,7 @@ const MobileNavbar = ({user}:MobileNavProps) => {
                                                     {item.label}
                                                 </p>
                                             </Link>
-                                        </SheetClose>
+                                    </SheetClose>
                                 )
                                 })}
                         </nav>

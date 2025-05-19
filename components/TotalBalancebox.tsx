@@ -17,14 +17,14 @@ const TotalBalancebox = ({
       <DoughnutChart accounts={accounts}/>
     </div>
     <div className='flex flex-1 flex-col gap-6 items-center'>
-      <h2 className='text-18 font-semibold text-gray-90'>
+      <h2 className='text-18 font-semibold text-gray-900'>
         Bank Accounts: {totalBanks}
       </h2>
       <div className='flex flex-col items-center gap-2'>
         <p>Total Current Balance</p>
-        <p className='text-24 lg:text-30 font-semibold text-gray-900 flex items-center gap-2'>
-            <AnimatedCounter amount={totalCurrentBalance}/>
-        </p>
+          <p className='text-24 lg:text-30 font-semibold text-gray-900 flex items-center gap-2'>
+              <AnimatedCounter amount={totalCurrentBalance}/>
+          </p>
 
       </div>
     </div>
