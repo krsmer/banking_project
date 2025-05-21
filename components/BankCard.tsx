@@ -33,12 +33,12 @@ const BankCard = ({account, userName, showBalance=true }: CreditCardProps) => {
                 width={45}
                 height={32} 
                 alt='bank card icon'
-                className='ml-5'
+                className='ml-3'
                 />
             </div>
             <Image
             src="/icons/lines.png"
-            width={316}
+            width={380}
             height={190}
             alt="background"
             className='absolute top-0 left-0'
